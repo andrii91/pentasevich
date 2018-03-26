@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "FuturaFuturisLightC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/FuturaFuturisLightC.woff2") format("woff2"), url("fonts/FuturaFuturisLightC.woff") format("woff"); }
+
+@font-face {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/FuturaMediumC.woff2") format("woff2"), url("fonts/FuturaMediumC.woff") format("woff"); }
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("fonts/Gilroy-ExtraBold.woff") format("woff"); }

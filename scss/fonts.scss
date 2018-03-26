@@ -1,0 +1,6 @@
+@import "bourbon";
+
+
+@include font-face("FuturaFuturisLightC", "fonts/FuturaFuturisLightC", $file-formats: woff woff2);
+@include font-face("FuturaMediumC", "fonts/FuturaMediumC", $file-formats: woff woff2);
+@include font-face("Gilroy-ExtraBold", "fonts/Gilroy-ExtraBold", $file-formats: woff woff2);

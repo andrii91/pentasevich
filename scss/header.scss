@@ -1,0 +1,549 @@
+@import "bourbon";
+@import "vars.scss";
+body {
+  position: relative;
+  font: 18px/21px $main_font;
+  color: $main_text_color;
+  font-weight: 400;
+  background-color: $_white;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.unscroll {
+  overflow: hidden;
+}
+
+.main_wrap {
+  overflow: hidden;
+}
+
+.container_big{
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .container_big {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .container_big {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+  .container_big {
+    width: 1170px;
+    padding: 0 10px;
+  }
+}
+
+
+.header {
+  font-family: $bold_font;
+  color: $_black;
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: 400;
+}
+
+.text--title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $_black;
+}
+
+.text--undertitle {
+  font-family: $medium_font;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.text--bold {
+  font-family: $bold_font;
+}
+
+.text--medium {
+  font-family: $medium_font;
+}
+
+.text--yellow {
+  color: $main_color;
+}
+
+.text--grey {
+  color: $main_text_color;
+}
+
+.text--white {
+  color: $_white
+}
+
+.text--black {
+  color: $_black
+}
+
+.shifted_left{
+  padding-left: 100px;
+}
+
+.text--borderb {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 102%;
+    left: -1%;
+    bottom: 0px;
+    background-color: $main_color;
+    height: 4px;
+    z-index: -1;
+  }
+  &_big:before{
+    height: 10px;
+    background-color: #b9a500;
+  }
+  &_medium:before{
+    height: 6px;
+    background-color: #b9a500;
+  }
+  &_white:before{
+    background-color: $_white;
+  }
+}
+
+.underline {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 40px;
+    height: 4px;
+    background-color: $_black;
+  }
+  &--white:before {
+    background-color: $_white;
+  }
+  &--sm:before {
+    width: 20px;
+    bottom: -40px;
+  }
+  &--top:before {
+    top: -30px;
+    bottom: initial;
+  }
+}
+
+.tablet_view{
+  display: none;
+}
+
+.md-modal.md-show {
+  opacity: 1;
+}
+
+.md-modal {
+  opacity: 0;
+}
+
+/* SCROLL BAR STYLES*/
+
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 2px;
+  max-height: 75px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: $_black;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $_black;
+}
+
+.btn {
+  height: 50px;
+  max-width: 310px;
+  width: 100%;
+  box-shadow: 0 15px 21px rgba(255, 228, 0, 0.28);
+  background-color: $main_color;
+  font-family: $bold_font;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: $_black;
+  transition: all .3s;
+  &--small{
+    max-width: 200px;
+  }
+  &--big{
+    max-width: 340px;
+  }
+  &:hover{
+    box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
+    background-color: #ff1c1c;
+    color: $_white
+  }
+  &:active{
+    box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
+    background-color: #cc0f0f;
+    color: $_white
+  }
+}
+
+
+/* BUTTON scrollUP SYLES*/
+
+#scrollup {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 30px;
+    transform: rotate(180deg);
+    display: none;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 40px;
+    text-shadow: -2px 2px 5px rgba(0,0,0, 0.3);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    svg{
+      fill: #848484;
+      transition: all 0.5s;
+    }
+}
+
+#scrollup:hover{
+  svg{fill: $main_color;}
+}
+/* BUTTON scrollUP END*/
+
+.phone{
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  font-size: 14px;
+  &:hover{
+    color: $main_color;
+    path{
+      fill: $main_color !important;
+    }
+  }
+  svg{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    path{
+      transition: all .3s
+    }
+  }
+}
+
+.call_back{
+  max-width: 181px;
+  width: 100%;
+  height: 41px;
+  border: 1px solid $_white;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  &:hover {
+    background-color: $main_color;
+    color: $_black;
+  }
+  &:active{
+    background-color: #a19000;
+    color: $_black;
+  }
+}
+.logo_text {
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  &:before{
+    bottom: -20px;
+  }
+}
+.section_00 {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../img/sec_00-bg.jpg);
+  position: relative;
+  padding: 35px 0 55px;
+  min-height: 100vh;
+
+  .call_back{
+    float: right;
+    margin-top: 15px;
+  }
+  .main_content{
+    margin-top: 110px;
+    margin-bottom: 85px;
+  }
+  .header_main {
+    font-size: 128px;
+    line-height: 1;
+    margin-bottom: 25px;
+    position: relative;
+    &:before{
+      content: 'Революция сознания';
+      position: absolute;
+      width: 100px;
+      right: -90px;
+      bottom: 0;
+      transform-origin: left center;
+      transform: rotate(-90deg);
+      font-family: $bold-font;
+      letter-spacing: 0.9px;
+      font-size: 18px;
+      line-height: 18px;
+      color: $_white;
+      letter-spacing: 0.9px;
+    }
+  }
+  .header_main-desc{
+    font-size: 30px;
+    line-height: 1;
+  }
+  .item{
+    margin: 145px 0 40px;
+  }
+  .btn {
+    margin: 45px 0 70px;
+  }
+
+  .btn_dwn{
+    will-change: transform;
+    transform-origin: left 51%;
+    transform: rotate(-90deg) translateZ(0);
+    font-size: 12px;
+    float: left;
+    letter-spacing: 1.2px;
+  }
+  .phone{
+    float: right;
+    path { fill: $_white}
+  }
+
+  .play_wrapper{
+    margin-top: 225px;
+    .play_btn:hover{
+      #wcteb, #wcteb5{
+        transition: all .3s;
+        fill: $_white;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .section_00{
+    .header_main{
+      font-size: 114px;
+      &:before{
+        right: -130px;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section_00{
+    min-height: auto;
+    .header_main{
+      font-size: 80px;
+      &:before{
+        right: -120px;
+      }
+    }
+    .header_main-desc{
+      font-size: 28px;
+    }
+  }
+  .tablet_view{
+    display: block;
+  }
+  footer {
+    .politics a {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-height: 760px) {
+  .md_large .md_content {
+    max-height: 320px;
+  }
+}
+
+.mobile_view{display: none;}
+
+
+@media (max-width: 767px) {
+  .desctop_tablet_view{
+    display: none !important;
+  }
+  .container_big {
+    padding: 0 20px;
+  }
+  .mobile_view{display: block;}
+  .section_00 {
+    padding-top: 20px;
+    background-image: url('../img/sec_00-bg-mob.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    color: $_white;
+    min-height: auto;
+    .text{color: #ececec}
+    .play_btn{
+      position: absolute;
+      right: 20%;
+      top: 200px;
+    }
+    .header_main {
+      font-size: 76px;
+      &:before{
+        display: none;
+      }
+    }
+    .col-5{
+      display: none;
+    }
+
+    .call_back {
+      margin-top: 0;
+    }
+
+    .main_content{
+      margin-bottom: 20px;
+    }
+
+    .btn_dwn{display: none;}
+    .phone{
+      float: left;
+    }
+  }
+  footer {
+    text-align: center;
+    [class*='col-'] {
+      width: 100%;
+    }
+    .politics {
+      a {
+        font-size: 14px;
+        display: block;
+        text-align: center;
+      }
+      a+a {
+        margin-left: 0
+      }
+    }
+    .logo_rezart {
+      display: inline-block;
+      float: none;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  }
+  div[id*='modal_politics'] {
+    h2 {
+      padding-top: 70px;
+    }
+    .btn_close_modal {
+      top: 20px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .section_00 {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../img/sec_00-bg-mob_sm.jpg);
+    .call_back{
+      border: none;
+      font-size: 0px;
+      color: transparent;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      background-image: url(../img/call-icon.svg);
+    }
+    .main_content{
+      margin-top: 50px;
+    }
+    .play_btn{
+      position: static;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .header_main {
+      font-size: 46px;
+      &:before{
+        display: none;
+      }
+    }
+    .header_main-desc{
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    .text{
+      .desctop_view, br{
+        display: none;
+      }
+    }
+    .item{
+      margin: 50px 0 30px;
+    }
+    .btn{
+      margin: 30px 0;
+    }
+  }
+  .text--borderb{
+    display: inline;
+    &:before{
+      display: none;
+    }
+  }
+}
+
+@media (max-height: 680px) {
+  .section_00{
+    .main_content{
+      margin-top: 50px;
+    }
+    .item{
+      margin-top: 90px;
+    }
+  }
+}
