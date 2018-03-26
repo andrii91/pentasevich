@@ -457,3 +457,10 @@ footer {
   float: none;
   vertical-align: middle;
   display: inline-block; }
+
+#sec_01 .social-head .social svg path {
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+
+#sec_01 .social-head .social:hover svg path {
+  fill: #ffe400; }
