@@ -290,7 +290,7 @@ body.unscroll {
 }
 .section_00 {
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position:  center;
   background-image: url(../img/sec_00-bg.jpg);
   position: relative;
   padding: 35px 0 55px;
@@ -350,7 +350,7 @@ body.unscroll {
   }
 
   .play_wrapper{
-    margin-top: 225px;
+    margin-top: 290px;
     .play_btn:hover{
       #wcteb, #wcteb5{
         transition: all .3s;
@@ -505,7 +505,7 @@ body.unscroll {
     .play_btn{
       position: static;
       margin: 0 auto;
-      text-align: center;
+      text-align: left;
     }
     .header_main {
       font-size: 46px;

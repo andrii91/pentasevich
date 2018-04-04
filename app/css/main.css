@@ -61,6 +61,7 @@
     background-color: #ffe400;
     left: 50%;
     bottom: 75px;
+    bottom: 60px;
     z-index: -1; }
   .section_02 .header {
     margin-bottom: 40px;
@@ -1098,12 +1099,16 @@ input:-ms-input-placeholder {
   .section_03 .sec_03-item-1 .price {
     padding: 30px;
     background-size: contain; }
+  #sec_05 .text {
+    background: rgba(255, 255, 255, 0.9);
+    display: inline-block; }
   .section_04 {
-    background-position: top -100px center;
+    background-position: top center;
     padding-top: 50px;
     padding-bottom: 80px; }
     .section_04:before {
-      top: 20px; }
+      top: 20px;
+      right: 54%; }
     .section_04 .desctop_view {
       display: none; }
     .section_04 .item-1 .wrapper-30 {
@@ -1285,7 +1290,7 @@ input:-ms-input-placeholder {
     padding-top: 80px;
     padding-bottom: 80px; }
     .section_04 .text {
-      color: #ececec; }
+      color: #000; }
     .section_04:before {
       display: none; }
     .section_04 .header {
@@ -1488,6 +1493,8 @@ input:-ms-input-placeholder {
     height: 270px; } }
 
 @media (max-width: 530px) {
+  .sec_06-item-1 .text br {
+    display: none; }
   div[id*="modal_callback"] {
     max-width: 500px;
     min-width: 100%; }

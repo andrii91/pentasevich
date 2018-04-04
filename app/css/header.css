@@ -245,7 +245,7 @@ body.unscroll {
 
 .section_00 {
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-image: url(../img/sec_00-bg.jpg);
   position: relative;
   padding: 35px 0 55px;
@@ -301,7 +301,7 @@ body.unscroll {
     .section_00 .phone path {
       fill: #fff; }
   .section_00 .play_wrapper {
-    margin-top: 225px; }
+    margin-top: 290px; }
     .section_00 .play_wrapper .play_btn:hover #wcteb, .section_00 .play_wrapper .play_btn:hover #wcteb5 {
       -webkit-transition: all .3s;
       transition: all .3s;
@@ -410,7 +410,7 @@ body.unscroll {
     .section_00 .play_btn {
       position: static;
       margin: 0 auto;
-      text-align: center; }
+      text-align: left; }
     .section_00 .header_main {
       font-size: 46px; }
       .section_00 .header_main:before {
