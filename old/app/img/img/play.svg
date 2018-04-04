@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="93" viewBox="0 0 93 93">
+  <defs>
+    <path id="wctea" d="M1299 429a45 45 0 1 1 0 90 45 45 0 0 1 0-90z" />
+    <path id="wcteb" d="M1299 444a30 30 0 1 1 0 60 30 30 0 0 1 0-60z" />
+    <path id="wctec" d="M1296 481v-14l8 7z" />
+  </defs>
+  <g transform="translate(-1252 -428)">
+    <g opacity=".7">
+      <use fill="#ffe400" xlink:href="#wctea" />
+    </g>
+    <g>
+      <use xlink:href="#wcteb" />
+    </g>
+    <g>
+      <use fill="#ffe400" xlink:href="#wctec" />
+    </g>
+  </g>
+</svg>

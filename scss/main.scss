@@ -88,7 +88,7 @@
     }
   }
   .sec_02-item-2{
-    margin-top: 325px;
+    margin-top: 245px;
     font-size: 24px;
     font-weight: 400;
     line-height: 28px;
@@ -115,6 +115,9 @@
     padding-top: 115px;
     padding-bottom: 95px;
   }
+  .afteritemtext{
+    margin-top: 20px;
+  }
   .with_bg{
     background-repeat: no-repeat;
     background-position: top right;
@@ -125,10 +128,14 @@
     line-height: 63px;
   }
 
+  .item_03-item-1-wrapper{
+    margin-bottom: 80px;
+  }
+
   .sec_03-item-1{
     display: flex;
     align-items: center;
-    margin: -20px 0 82px;
+    margin: -20px 0 0px;
     position: relative;
     &:before{
       content: '';
@@ -136,7 +143,7 @@
       width: 99999px;
       height: 5px;
       left: 0;
-      bottom: -33px;
+      bottom: -103px;
       background-color: $_black;
     }
     .title{
@@ -236,6 +243,7 @@
   background-image: url(../img/sec_05-bg.jpg);
   .header{
     line-height: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -567,7 +575,10 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url(../img/sec_14-bg.jpg);
-  .header{line-height: 1;}
+  .header{
+    line-height: 1;
+    padding-bottom: 80px;
+  }
   .col-4{
     position: relative;
     .yellow_block{
@@ -585,9 +596,9 @@
     z-index: 5;
     background-color: $_white;
     box-shadow: 0 16px 46px rgba(0, 0, 0, 0.22);
-    margin-top: 40px;
-    margin-left: 10px;
     padding: 0 10px 60px;
+    max-width: 500px;
+    margin: 40px auto 0;
     .number{
       font-size: 70px;
       position: relative;
@@ -703,7 +714,7 @@
     }
   }
   .social+.social{
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   .contack_item{

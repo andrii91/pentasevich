@@ -34,6 +34,9 @@
  }
 
  .section_02{
+   &:before{
+     bottom: 50px;
+   }
     .text,
     .title,
     .sec_02-item-2{
@@ -48,7 +51,7 @@
 
     .sec_02-item-2{
       font-size: 22px;
-      margin-top: 260px;
+      margin-top: 230px;
       &:before{
         width: 240px;
         height: 180px;
@@ -452,9 +455,9 @@
       width: 100%;
       .desctop_view{display: none;}
       margin-bottom: 60px;
-    }
-    .tablet-col-6{
-      width: 50%;
+      .yellow_block{
+        left: 100px;
+      }
     }
     .packet{
       padding-right: 20px;
@@ -584,6 +587,7 @@
       .col-2{
         width: 33.33%;
         margin-bottom: 30px;
+        min-height: 300px;
       }
     }
   }
