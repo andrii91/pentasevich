@@ -1099,6 +1099,8 @@ input:-ms-input-placeholder {
   .section_03 .sec_03-item-1 .price {
     padding: 30px;
     background-size: contain; }
+  #sec_05 .mt150 {
+    margin-top: 150px; }
   #sec_05 .text {
     background: rgba(255, 255, 255, 0.9);
     display: inline-block; }
@@ -1124,7 +1126,9 @@ input:-ms-input-placeholder {
   .section_05 {
     padding-top: 100px;
     padding-bottom: 80px;
-    background-position: 57% 0; }
+    background-position: 57%; }
+  .section_04 .header {
+    margin-left: 40px; }
   .section_06 {
     padding: 80px 0; }
     .section_06 .header {
@@ -1289,8 +1293,10 @@ input:-ms-input-placeholder {
     background-color: #343434;
     padding-top: 80px;
     padding-bottom: 80px; }
-    .section_04 .text {
+    .section_04 .item-1 .text {
       color: #000; }
+    .section_04 .text {
+      color: #ccc; }
     .section_04:before {
       display: none; }
     .section_04 .header {

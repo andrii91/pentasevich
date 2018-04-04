@@ -265,6 +265,9 @@
     }
   }
   #sec_05 {
+    .mt150 {
+      margin-top: 150px;
+    }
     .text {
       background: rgba(255,255,255, 0.9);
       display: inline-block;
@@ -297,7 +300,10 @@
   .section_05{
     padding-top: 100px;
     padding-bottom: 80px;
-    background-position: 57% 0;
+    background-position: 57%;
+  }
+  .section_04 .header {
+    margin-left: 40px;
   }
 
   .section_06{
@@ -566,7 +572,12 @@
     background-color: #343434;
     padding-top: 80px;
     padding-bottom: 80px;
-    .text{color: #000}
+    .item-1 {
+      .text {
+        color: #000;
+      }
+    }
+    .text{color: #ccc}
     &:before{
       display: none
     }
