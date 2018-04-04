@@ -290,7 +290,8 @@ body.unscroll {
 }
 .section_00 {
   background-repeat: no-repeat;
-  background-position:  center;
+  background-position:  center top;
+  background-size: cover;
   background-image: url(../img/sec_00-bg.jpg);
   position: relative;
   padding: 35px 0 55px;

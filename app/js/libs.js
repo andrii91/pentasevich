@@ -130,6 +130,12 @@ var ModalEffects = (function() {
 			});
 
 			close.addEventListener( 'click', function( ev ) {
+				var iframe = $(this).parents('.md-content').find('iframe');
+				var src =  iframe.attr('src');
+				if (src) {
+					  src =  src.split('?');
+					 iframe.attr('src', src[0]);
+				}
 				ev.stopPropagation();
 				removeModalHandler();
 			});
